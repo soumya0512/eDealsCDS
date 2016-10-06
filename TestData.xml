@@ -47,6 +47,45 @@
 <db2pwd>roms081</db2pwd>
 </user>
 
+<user userid="creator-user_Invalid1">
+<UserName>hotae0_vendor15</UserName>
+<password>123test</password>
+<promotionNbr>1742749</promotionNbr>
+<PLUCode>test</PLUCode>
+<ExpectedError>PLU code should be between 0 and 9999.</ExpectedError>
+</user>
+
+<user userid="approver-user_Invalid2">
+<UserName>epromapprover</UserName>
+<password>abc1234</password>
+<promotionNbr>1742927</promotionNbr>
+<dealAmount>12541</dealAmount>
+<ExpectedError>Amount should be between 0 and 999.99.</ExpectedError>
+</user>
+
+<user userid="CoupContValidation-user">
+<UserName>hotae0_vendor15</UserName>
+<password>123test</password>
+<vndContractID>Automation Test</vndContractID>
+<dealDscrptn>Automation Test</dealDscrptn>
+<beginDate>103016</beginDate>
+<endDate>123016</endDate>
+<amount>1</amount>
+<mustBuyQty>1</mustBuyQty>
+<consLmtQty>1</consLmtQty>
+<clipLmt>1</clipLmt>
+<processCd>1</processCd>
+<pluCd>1</pluCd>
+<manufacturerCd>1</manufacturerCd>
+<couponUPC>1</couponUPC>
+<invalidCouponTitle>Automation Invalid Title ABCDEFGHIJKLMNOPQRSTUVWXYZ</invalidCouponTitle>
+<emptyCouponTitle></emptyCouponTitle>
+<couponTitle>Automation Valid Title</couponTitle>
+<invalidCouponDesc>Automation Invalid Desc ABCDEFGHIJKLMNOPQRSTUVWXYZ</invalidCouponDesc>
+<emptyCouponDesc></emptyCouponDesc>
+</user>
+
+
 </authorizedUsers>
 
 <!-- ========================================================================================================================================= -->	

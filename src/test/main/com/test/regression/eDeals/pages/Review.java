@@ -464,4 +464,91 @@ public class Review extends SuiteBase{
 		Thread.sleep(3000);
 	}	
 	
+
+	@FindBy(xpath = "//*[@id='redeemAmount']")
+	private WebElement _amount;
+	
+	@FindBy(xpath = ".//*[@id='messaging']/li")
+	private WebElement _Validationmessage;
+	
+	@FindBy(xpath = "//*[@id='pluCode']")
+	private WebElement _pluCode;
+	
+	@FindBy(xpath = ".//*[@id='saveCouponTxt']")
+	private WebElement _popupSave;
+	
+	
+	
+	public void closeCouponPopuponly() throws InterruptedException{
+		
+		waitFor(_closeWindow);
+		_closeWindow.click();
+		Thread.sleep(3000);
+		
+		
+	}	
+	
+	public  void popupSave() throws InterruptedException{
+		
+		waitFor(_popupSave);
+		_popupSave.click();
+		Thread.sleep(3000);
+		
+	}
+
+	public void couponUpdatePLUcode(String PLUcode) throws InterruptedException
+	{
+		System.out.println("PLUcode");
+		waitFor(_pluCode);
+		_pluCode.clear();
+		_pluCode.sendKeys(PLUcode);
+		Thread.sleep(3000);
+	}
+	
+	public void couponUpdateAmount(String Amount) throws InterruptedException
+	{
+		System.out.println(Amount);
+		waitFor(_rdmAmount);
+		_amount.clear();
+		_amount.sendKeys(Amount);
+		Thread.sleep(3000);
+	}
+	
+	public String GetValidationMessage() throws InterruptedException
+	{
+		waitFor(_Validationmessage);
+		String ValidatMessage = _Validationmessage.getAttribute("value");
+		
+		return ValidatMessage;
+	}
+
+	public boolean checkDisabledFields() throws InterruptedException
+	{
+		boolean FinalResult;
+		waitFor(_amount);
+		boolean amountresult=_amount.isEnabled();
+		System.out.println("is amount enabled :"+amountresult);
+		if(amountresult==false)
+		{
+			waitFor(_mustBuyQty);
+			boolean mustBuyresult=_mustBuyQty.isEnabled();
+			System.out.println("is must Buy field enabled :"+mustBuyresult);
+				if (mustBuyresult==false)
+				{
+					waitFor(_consLmtQty);
+					boolean conslmtQty=_consLmtQty.isEnabled();
+					System.out.println("is customer limit field enabled :"+conslmtQty);
+					if (conslmtQty==false)
+					{
+							waitFor(_clipLmtQty);
+							boolean clipLmtQty=_clipLmtQty.isEnabled();
+							System.out.println("is clip limit field enabled :"+clipLmtQty);
+							 FinalResult=false;
+					} else FinalResult=true; 
+				}else FinalResult=true; 
+		}else FinalResult=true; 
+		//waitfor()
+		return FinalResult;
+	}
+	
 }

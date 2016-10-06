@@ -182,6 +182,11 @@ public class Create extends SuiteBase{
 	@FindBy(xpath = "//*[@id='LOButton']")
 	private WebElement _logoutPopup;
 	
+	//Negative Validation Xpath
+	
+	@FindBy(xpath = "//*[@id='status']/li")
+	private WebElement _errorMessage;
+	
 	public void clickLogin(){
 		
 		waitFor(_LoginButtonHome);
@@ -451,5 +456,85 @@ public class Create extends SuiteBase{
 		waitFor(_logoutPopup);
 		_logoutPopup.click();
 		Thread.sleep(3000);
+	}
+	
+	//Negative Validation // Aishwarya
+	
+		public int couponContentInvalidTitleValidation(String invalidCouponTitle) throws InterruptedException{
+			
+			waitFor(_couponTitle);
+			_couponTitle.sendKeys(invalidCouponTitle);
+			Thread.sleep(3000);
+			
+			String actualTitle = _couponTitle.getAttribute("value");		
+			int len= actualTitle.length();
+			
+			System.out.println("Text displayed in Title Field in Application UI:"+ actualTitle+"\nThe length of the title displayed in Application UI is:"+len); 
+
+			return len;
+		}
+		
+	public void couponContentEmptyTitleValidation(String emptyCouponTitle) throws InterruptedException{
+			
+			waitFor(_couponTitle);
+			_couponTitle.clear();
+			_couponTitle.sendKeys(emptyCouponTitle);
+			Thread.sleep(3000);
+			
+			waitFor(_NxtStep);
+			_NxtStep.click();
+			Thread.sleep(3000);
+			
+			waitFor(_errorMessage);
+			boolean value=_errorMessage.isDisplayed();
+			if(value=true){
+				System.out.println("Error message: 'TITLE FIELD CANNOT BE EMPTY' is displayed succesfully");
+			}
+			else{
+				System.out.println("No error message warning user that title field cannot be empty.");
+			}
+				
+			Thread.sleep(3000);			
+		}
+
+	public int couponContentInvalidDescValidation(String invalidCouponDesc,String couponTitle) throws InterruptedException{
+		
+			waitFor(_couponTitle);
+			_couponTitle.sendKeys(couponTitle);
+			Thread.sleep(3000);
+			
+			waitFor(_couponDesc);
+			_couponDesc.sendKeys(invalidCouponDesc);
+			Thread.sleep(3000);
+			
+			String actualDesc = _couponDesc.getAttribute("value");
+			System.out.println("Text displayed in Title Field in Application UI:"+ actualDesc); 
+			
+			int len= actualDesc.length();
+			
+			return len;
+	}
+
+	public void couponContentEmptyDescValidation(String emptyCouponDesc) throws InterruptedException{
+		
+			waitFor(_couponDesc);
+			_couponDesc.clear();
+			_couponDesc.sendKeys(emptyCouponDesc);
+			Thread.sleep(3000);
+			
+			waitFor(_NxtStep);
+			_NxtStep.click();
+			Thread.sleep(3000);
+			
+			waitFor(_errorMessage);
+			boolean value=_errorMessage.isDisplayed();
+			if(value=true){
+				System.out.println("Error message: 'COUPON DESCRIPTION FIELD CANNOT BE EMPTY' is displayed succesfully");
+			}
+			else{
+				System.out.println("No error message warning user that coupon description field cannot be empty.");
+			}
+				
+			Thread.sleep(3000);			
 	}
 }  
