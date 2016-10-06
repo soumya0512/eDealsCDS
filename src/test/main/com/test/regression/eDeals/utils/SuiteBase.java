@@ -90,7 +90,7 @@ public class SuiteBase {
  			  
 // 			 System.setProperty("webdriver.chrome.driver", "./exeFiles/chromedriver.exe");
  			 
- 			 System.setProperty("webdriver.chrome.driver", "C:\\Users\\ssub002\\Soumya\\Selenium\\Driver_exe\\chromedriver.exe");
+ 			 System.setProperty("webdriver.chrome.driver", "C:\\Users\\ssub002\\Soumya\\Selenium\\exeFiles\\chromedriver.exe");
  			 
  			  _driver = new ChromeDriver();
  			  System.out.println("Chrome Launched Successfully!!");
@@ -113,7 +113,7 @@ public class SuiteBase {
 // 			System.setProperty("webdriver.ie.driver","./exeFiles/IEDriverServer.exe");
 // 			_driver = new InternetExplorerDriver(capabilitiesIE);
 
- 			System.setProperty("webdriver.ie.driver","C:\\Users\\ssub002\\Soumya\\Selenium\\Driver_exe\\IEDriverServer.exe");
+ 			System.setProperty("webdriver.ie.driver","C:\\Users\\ssub002\\Soumya\\Selenium\\exeFiles\\IEDriverServer.exe");
  			System.out.println("Initialized IE!!!");
  		 }
  		  
