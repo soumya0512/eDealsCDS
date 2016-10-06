@@ -31,8 +31,8 @@ public class Create extends SuiteBase{
 	
 	@FindBy(xpath = "(//input[@name='PASSWORD'])")
 	private WebElement _password;
-	
-	@FindBy(xpath = "(//*[@id='page_container']/table/tbody/tr/td[2]/table/tbody/tr/td[1]/div/div[2]/div/div[2]/div[2]/p/a[2])")
+
+	@FindBy(xpath = "(//a[@href='https://wwwtest.svharbor.com/svcportal/home.jsf?portal=ism']/p)")
 	private WebElement _svuIndependent;
 	
 	@FindBy(xpath = "(//*[@id='9'])")
@@ -504,6 +504,7 @@ public class Create extends SuiteBase{
 			Thread.sleep(3000);
 			
 			waitFor(_couponDesc);
+			_couponDesc.clear();
 			_couponDesc.sendKeys(invalidCouponDesc);
 			Thread.sleep(3000);
 			

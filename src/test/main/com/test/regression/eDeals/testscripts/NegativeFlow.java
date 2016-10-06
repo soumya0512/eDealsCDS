@@ -83,7 +83,8 @@ public class NegativeFlow extends SuiteBase{
 		
 		System.out.println(PLUCode);
 		System.out.println(ExpectedError);
-	//	Negative house= new Negative();
+	
+		//	Negative house= new Negative();
 		
 		homeR.couponUpdatePLUcode(PLUCode);// here
 		log.info("PLUcode  field is updated successfully");
