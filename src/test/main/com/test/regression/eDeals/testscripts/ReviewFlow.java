@@ -91,7 +91,7 @@ public class ReviewFlow extends SuiteBase{
 
 		con = new DB2Connection();
 		
-		String query = "select * from CID92D.DEAL_COUPON WHERE DC_MKR_PR_NBR= 1742749";
+		String query = "select * from CID92D.DEAL_COUPON WHERE DC_MKR_PR_NBR= 1742553";
 		
 		con.setUp();
 		ResultSet rs = con.couponData(query);

@@ -38,7 +38,7 @@
 <user userid="approver-user">
 <UserName>epromapprover</UserName>
 <password>abc1234</password>
-<promotionNbr>1742749</promotionNbr>
+<promotionNbr>1742553</promotionNbr>
 </user>
 
 <user userid="db2-user">
