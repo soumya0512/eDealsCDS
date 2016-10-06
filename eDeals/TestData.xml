@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Test Data Factory --><TestData>
+
+
+						<!-- Authorized Users List................. -->
+						
+						<!-- Data Used for Deal Creation Testing -->
+						
+<authorizedUsers>
+						
+<user userid="creator-user">
+<UserName>hotae0_vendor15</UserName>
+<password>123test</password>
+<vndContractID>Automation Test</vndContractID>
+<dealDscrptn>Automation Test</dealDscrptn>
+<beginDate>103016</beginDate>
+<endDate>123016</endDate>
+<amount>1</amount>
+<mustBuyQty>1</mustBuyQty>
+<consLmtQty>1</consLmtQty>
+<clipLmt>1</clipLmt>
+<processCd>1</processCd>
+<pluCd>1</pluCd>
+<manufacturerCd>1</manufacturerCd>
+<couponUPC>1</couponUPC>
+<couponTitle>Automation Test TL</couponTitle>
+<couponDesc>Automation Test DSC</couponDesc>
+<couponAddDesc>Automation Test ADSC</couponAddDesc>
+<couponDtls>Automation Test CD</couponDtls>
+<couponBegDt>110516</couponBegDt>
+<couponEndDt>120516</couponEndDt>
+<addrSearch>p</addrSearch>
+<redemInfo>Automation Test Redeem Info</redemInfo>
+<itemGrpName>bounce</itemGrpName>
+<dealAmount>1</dealAmount>
+<creatorCmnt>Automated deal</creatorCmnt>
+</user>
+
+<user userid="approver-user">
+<UserName>epromapprover</UserName>
+<password>abc1234</password>
+<promotionNbr>1742749</promotionNbr>
+</user>
+
+<user userid="db2-user">
+<url>jdbc:db2://sho-mvs-d02.supervalu.com:441/IDMSDB0D</url>
+<db2user>hxs1sa</db2user>
+<db2pwd>roms081</db2pwd>
+</user>
+
+</authorizedUsers>
+
+<!-- ========================================================================================================================================= -->	
+
+</TestData>

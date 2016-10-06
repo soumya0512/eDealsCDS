@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="cub">
+    <property environment="env"/>
+    <property name="M2_REPO" value="../../../../.m2/repository"/>
+    <property name="ECLIPSE_HOME" value="../../../../Downloads/eclipse-jee-mars-2-win32-x86_64/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../../../.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-java/2.53.0/selenium-java-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.53.0/selenium-chrome-driver-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.53.0/selenium-remote-driver-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="../../../../.m2/repository/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-api/2.53.0/selenium-api-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar"/>
+        <pathelement location="../../../../.m2/repository/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.jar"/>
+        <pathelement location="../../../../.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+        <pathelement location="../../../../.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.53.0/selenium-edge-driver-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+        <pathelement location="../../../../.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.53.0/selenium-firefox-driver-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+        <pathelement location="../../../../.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.53.0/selenium-safari-driver-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/io/netty/netty/3.5.7.Final/netty-3.5.7.Final.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-support/2.53.0/selenium-support-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.53.0/selenium-leg-rc-2.53.0.jar"/>
+        <pathelement location="../../../../.m2/repository/com/relevantcodes/extentreports/2.40.1/extentreports-2.40.1.jar"/>
+        <pathelement location="../../../../.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar"/>
+        <pathelement location="../../../../.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar"/>
+        <pathelement location="../../../../.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar"/>
+        <pathelement location="../../../../.m2/repository/org/apache/poi/poi/3.14-beta1/poi-3.14-beta1.jar"/>
+        <pathelement location="../../../../.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+        <pathelement location="../../../../.m2/repository/org/testng/testng/6.8/testng-6.8.jar"/>
+        <pathelement location="../../../../.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
+        <pathelement location="../../../../.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar"/>
+        <pathelement location="../../../../.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar"/>
+        <pathelement location="../../../../.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+    </path>
+    <path id="cub.classpath">
+        <path refid="Maven Dependencies.libraryclasspath"/>
+        <pathelement location="${M2_REPO}"/>
+        <pathelement location="${ECLIPSE_HOME}"/>
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/test/main">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <src path="src/test/main"/>
+            <classpath refid="cub.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <classpath refid="cub.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+              	
+              	<property name="LIB" value="${basedir}/lib" />
+              	    <property name="BIN" value="${basedir}/bin" />
+              	    <path id="master-classpath">
+              	        <pathelement location="${BIN}" />
+              	        <fileset dir="${LIB}" includes="*.jar"/>
+              	    </path>
+              	     
+              	    <target name="generateReport">
+              	        <delete dir="${basedir}/testng-xslt">
+              	        </delete>
+              	        <mkdir dir="${basedir}/testng-xslt">
+              	        </mkdir>
+              	        <xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html">
+              	            <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+              	            <param expression="true" name="testNgXslt.sortTestCaseLinks" />
+              	            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+              	            <param expression="true" name="testNgXslt.showRuntimeTotals" />
+              	            <classpath refid="master-classpath">
+              	            </classpath>
+              	        </xslt>
+              	    </target>
+</project>

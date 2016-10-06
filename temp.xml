@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TestData>
+
+
+						<!-- Data Used for Valid SignIn , Shopping Lists Testing -->
+						
+<user userid="carded-user">
+<UserName>sltesting_3@cub.com</UserName>
+<password>password</password>
+<SLName>list1</SLName>
+<item1>litchi</item1>
+<quantity1>10 kgs</quantity1>
+<item1update>litcheeeeeeeeee</item1update>
+<quantity1update>123456789 kgsssss</quantity1update>
+<item2>carrot</item2>
+<quantity2>100000100</quantity2>
+<item3>fish</item3>
+<quantity3>two</quantity3>
+</user>
+
+</TestData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.test.regression.cub.testscripts.AboutUs">
+        <methods>
+          <include name="initialization"/>
+          <include name="breakDown"/>
+          <include name="DataSetUp"/>
+          <include name="AboutUsNavigationSignedInUser"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.regression.cub.testscripts.AboutUs -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

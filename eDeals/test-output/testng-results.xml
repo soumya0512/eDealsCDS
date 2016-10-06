@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="71359" started-at="2016-09-29T07:48:46Z" finished-at="2016-09-29T07:49:57Z">
+    <groups>
+    </groups>
+    <test name="Sign In - Testing" duration-ms="71359" started-at="2016-09-29T07:48:46Z" finished-at="2016-09-29T07:49:57Z">
+      <class name="com.test.regression.eDeals.testscripts.ReviewFlow">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.eDeals.testscripts.ReviewFlow@268948]" name="initialization" is-config="true" duration-ms="6951" started-at="2016-09-29T13:18:46Z" finished-at="2016-09-29T13:18:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.eDeals.testscripts.ReviewFlow.reviewDeal() throws java.lang.InterruptedException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="reviewDeal()[pri:0, instance:com.test.regression.eDeals.testscripts.ReviewFlow@268948]" name="reviewDeal" duration-ms="63002" started-at="2016-09-29T13:18:53Z" finished-at="2016-09-29T13:19:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reviewDeal -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.eDeals.testscripts.ReviewFlow@268948]" name="closeDriver" is-config="true" duration-ms="1370" started-at="2016-09-29T13:19:56Z" finished-at="2016-09-29T13:19:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.eDeals.testscripts.ReviewFlow.reviewDeal() throws java.lang.InterruptedException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.test.regression.eDeals.testscripts.ReviewFlow -->
+    </test> <!-- Sign In - Testing -->
+  </suite> <!-- Suite -->
+</testng-results>

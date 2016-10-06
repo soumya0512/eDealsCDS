@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>TestNG:  Sign Up - Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sign Up - Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 17 15:15:15 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>834 seconds (834885 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.signUp_validateContactInfoPopup()'><b>signUp_validateContactInfoPopup</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+
+ Failed for LastName with Special Characters, 
+ Failed for LastName with Numbers, 
+ Failed for ZIP with alphabets, 
+ Failed for CITY with Special Characters, 
+ Failed for  CITY with numbers
+	at com.test.regression.cub.testscripts.SignUp.signUp_validateContactInfoPopup(SignUp.java:683)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1113829504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1113829504'><pre>java.lang.AssertionError: The following asserts failed:
+
+ Failed for LastName with Special Characters, 
+ Failed for LastName with Numbers, 
+ Failed for ZIP with alphabets, 
+ Failed for CITY with Special Characters, 
+ Failed for  CITY with numbers
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+	at com.test.regression.cub.testscripts.SignUp.signUp_validateContactInfoPopup(SignUp.java:683)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>270</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne_validateRewardsPopup()'><b>validSignUp_yesIHaveOne_validateRewardsPopup</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+
+  Failed: No error displayed when user enters invalid cardless id and valid lastname.., 
+  Failed: No error displayed when user enters invalid last name and valid  card number.., 
+  Failed: No error displayed when user enters invalid Cardles id and valid  card number.., 
+  Failed: No error displayed when user enters valid Cardles id and invalid card number.., 
+  Failed: No error displayed when user enters valid cardless id and invalid lastname.., 
+  Failed: Continue button is enabled  when user enters alphabets in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Special Characters in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Space in Cardles id feild while adding existing card.., 
+  Failed: No error displayed when user enters invalid card number and valid lastname..
+	at com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne_validateRewardsPopup(SignUp.java:829)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace86558824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace86558824'><pre>java.lang.AssertionError: The following asserts failed:
+
+  Failed: No error displayed when user enters invalid cardless id and valid lastname.., 
+  Failed: No error displayed when user enters invalid last name and valid  card number.., 
+  Failed: No error displayed when user enters invalid Cardles id and valid  card number.., 
+  Failed: No error displayed when user enters valid Cardles id and invalid card number.., 
+  Failed: No error displayed when user enters valid cardless id and invalid lastname.., 
+  Failed: Continue button is enabled  when user enters alphabets in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Special Characters in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Space in Cardles id feild while adding existing card.., 
+  Failed: No error displayed when user enters invalid card number and valid lastname..
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+	at com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne_validateRewardsPopup(SignUp.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>212</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.validateSignInLinkInSignUpPopup()'><b>validateSignInLinkInSignUpPopup</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+Sign In popup is not displayed on clicking SignIn in Sign Up popup
+	at com.test.regression.cub.testscripts.SignUp.validateSignInLinkInSignUpPopup(SignUp.java:309)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137078855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1137078855'><pre>java.lang.AssertionError: The following asserts failed:
+Sign In popup is not displayed on clicking SignIn in Sign Up popup
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+	at com.test.regression.cub.testscripts.SignUp.validateSignInLinkInSignUpPopup(SignUp.java:309)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>1</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.userNameNPasswordFieldValidationSignUp()'><b>userNameNPasswordFieldValidationSignUp</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td></td>
+<td>27</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.validSignUp4mSL()'><b>validSignUp4mSL</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td></td>
+<td>67</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.validSignUp_noCard()'><b>validSignUp_noCard</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td></td>
+<td>41</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.validSignUp_noCardButWantOne()'><b>validSignUp_noCardButWantOne</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td></td>
+<td>53</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+<tr>
+<td title='com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne()'><b>validSignUp_yesIHaveOne</b><br>Test class: com.test.regression.cub.testscripts.SignUp</td>
+<td></td>
+<td>54</td>
+<td>com.test.regression.cub.testscripts.SignUp@13a5fe33</td></tr>
+</table><p>
+</body>
+</html>
