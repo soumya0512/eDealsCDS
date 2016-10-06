@@ -1,6 +1,6 @@
 package com.test.regression.eDeals.utils;
 
-// this is the class written for DB2Connection
+// this is the class written for DB2Connection - updated
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
