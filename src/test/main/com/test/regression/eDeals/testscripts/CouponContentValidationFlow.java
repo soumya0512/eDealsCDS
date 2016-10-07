@@ -131,7 +131,7 @@ public class CouponContentValidationFlow extends SuiteBase{
 			   		if (len3!= len4){
 			 		   if(len4<=40){
 			 			   System.out.println("Validation proves coupon description field does not accept more than 40 characters");
-			 			   home.couponContentEmptyTitleValidation(emptyCouponTitle);
+			 			   home.couponContentEmptyDescValidation(emptyCouponDesc);
 			 			   log.info("Validation proves that coupon description field cannot be left empty");
 			 		   }
 			 		   
