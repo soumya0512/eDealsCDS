@@ -17,6 +17,7 @@ import com.test.regression.eDeals.utils.ReadXML;
 import com.test.regression.eDeals.utils.SuiteBase;
 
 public class CreateFlow extends SuiteBase{
+	// create flow
 	Create home;
 	
 	Logger log = Logg.createLogger();
