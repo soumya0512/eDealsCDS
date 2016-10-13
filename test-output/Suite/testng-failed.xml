@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Sign In - Testing(failed)">
+  <test name="eDeals Regression(failed)">
     <classes>
+      <class name="com.test.regression.eDeals.testscripts.CouponContentValidationFlow">
+        <methods>
+          <include name="initialization"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.regression.eDeals.testscripts.CouponContentValidationFlow -->
+      <class name="com.test.regression.eDeals.testscripts.CreateFlow">
+        <methods>
+          <include name="createDeal"/>
+          <include name="initialization"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.regression.eDeals.testscripts.CreateFlow -->
+      <class name="com.test.regression.eDeals.testscripts.NegativeFlow">
+        <methods>
+          <include name="initialization"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.regression.eDeals.testscripts.NegativeFlow -->
       <class name="com.test.regression.eDeals.testscripts.ReviewFlow">
         <methods>
           <include name="reviewDeal"/>
           <include name="initialization"/>
+          <include name="closeDriver"/>
         </methods>
       </class> <!-- com.test.regression.eDeals.testscripts.ReviewFlow -->
     </classes>
-  </test> <!-- Sign In - Testing(failed) -->
+  </test> <!-- eDeals Regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->

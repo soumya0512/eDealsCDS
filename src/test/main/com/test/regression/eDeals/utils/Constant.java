@@ -6,5 +6,5 @@ public class Constant {
 	
 	public static final String browser_name = "chrome";
 	 
-    //public static final String screenshots_folder = "C:\\Users\\ssub002\\Desktop\\eDeals_Screenshots\\";
+//	public static final String screenshots_folder = "C:\\Users\\ssub002\\Desktop\\eDeals_Screenshots\\";
 }
