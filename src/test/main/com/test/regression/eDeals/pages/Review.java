@@ -459,9 +459,9 @@ public class Review extends SuiteBase{
 		_closeWindow.click();
 		Thread.sleep(3000);
 		
-		waitFor(_updateBtn);
+		/*waitFor(_updateBtn);
 		_updateBtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
 	}	
 	
 

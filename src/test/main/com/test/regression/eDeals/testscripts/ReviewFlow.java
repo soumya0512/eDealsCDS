@@ -82,7 +82,9 @@ public class ReviewFlow extends SuiteBase{
 		
 		homeR.closeCouponPopup();
 		Thread.sleep(3000);
-	
+		
+		home.logout();
+		Thread.sleep(3000);
 	}
 	
 	public void dataValidation() throws InterruptedException, XPathExpressionException, ParserConfigurationException, SAXException, IOException{

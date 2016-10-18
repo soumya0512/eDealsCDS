@@ -6,11 +6,11 @@
 
 <test name="eDeals Regression">
     <classes> 
-    	<!-- <class name="com.test.regression.eDeals.testscripts.CreateFlow"> </class>     
+    	<class name="com.test.regression.eDeals.testscripts.CreateFlow"> </class>     
     	
-    	<class name="com.test.regression.eDeals.testscripts.ReviewFlow"> </class> 
+    	<class name="com.test.regression.eDeals.testscripts.ReviewFlow"> </class>
     	
-    	<class name="com.test.regression.eDeals.testscripts.NegativeFlow"> </class>  -->    	
+    	<class name="com.test.regression.eDeals.testscripts.NegativeFlow"> </class> 	
     	
     	<class name="com.test.regression.eDeals.testscripts.CouponContentValidationFlow"> </class>
     	

@@ -3,32 +3,28 @@
 <suite name="Failed suite [Suite]">
   <test name="eDeals Regression(failed)">
     <classes>
-      <class name="com.test.regression.eDeals.testscripts.CouponContentValidationFlow">
+      <class name="com.test.regression.eDeals.testscripts.ReviewFlow">
         <methods>
-          <include name="initialization"/>
-          <include name="closeDriver"/>
+          <include name="reviewDeal"/>
         </methods>
-      </class> <!-- com.test.regression.eDeals.testscripts.CouponContentValidationFlow -->
+      </class> <!-- com.test.regression.eDeals.testscripts.ReviewFlow -->
       <class name="com.test.regression.eDeals.testscripts.CreateFlow">
         <methods>
           <include name="createDeal"/>
           <include name="initialization"/>
-          <include name="closeDriver"/>
         </methods>
       </class> <!-- com.test.regression.eDeals.testscripts.CreateFlow -->
       <class name="com.test.regression.eDeals.testscripts.NegativeFlow">
         <methods>
-          <include name="initialization"/>
-          <include name="closeDriver"/>
+          <include name="Disabled"/>
+          <include name="NegDeal"/>
         </methods>
       </class> <!-- com.test.regression.eDeals.testscripts.NegativeFlow -->
-      <class name="com.test.regression.eDeals.testscripts.ReviewFlow">
+      <class name="com.test.regression.eDeals.testscripts.CouponContentValidationFlow">
         <methods>
-          <include name="reviewDeal"/>
-          <include name="initialization"/>
-          <include name="closeDriver"/>
+          <include name="couponContentValidation"/>
         </methods>
-      </class> <!-- com.test.regression.eDeals.testscripts.ReviewFlow -->
+      </class> <!-- com.test.regression.eDeals.testscripts.CouponContentValidationFlow -->
     </classes>
   </test> <!-- eDeals Regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->

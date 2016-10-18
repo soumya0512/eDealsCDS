@@ -94,7 +94,7 @@ public class NegativeFlow extends SuiteBase{
 		String ActualError=homeR.GetValidationMessage();
 		
 		CaptureScreenShot(_driver,"PLUcodeError");
-		
+		log.info("Screenshot captured successfully");
 		
 		log.info("PLUcode  error message is  successfully validated");
 		
@@ -149,15 +149,17 @@ public class NegativeFlow extends SuiteBase{
 		
 		boolean result=homeR.checkDisabledFields();
 		log.info("Validated successfully if the fields are disabled as expected");
-		System.out.println("Is the amount field disabled-->" +result);
+		System.out.println("Is the amount field enabled-->" +result);
 		
-			if(result=false)
-				{
-				log.info("All the expected fields are disabled as expected");
-				
-				}
-			else
-				log.info("Error: fields are not disabled as expected");
+//			if(result=false)
+//				{
+//				log.info("All the expected fields are disabled as expected");
+//				
+//				}
+//			else
+//				{
+//				log.info("Error: fields are not disabled as expected");
+//				}
 			
 		s_Assert.assertEquals(result, "false", "Pass");
 		

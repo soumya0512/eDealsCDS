@@ -1,5 +1,6 @@
 package com.test.regression.eDeals.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -10,11 +11,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.test.regression.eDeals.utils.Logg;
 import com.test.regression.eDeals.utils.SuiteBase;
 
 public class Create extends SuiteBase{
 	
 	WebDriver _driver;
+	
+	Logger log = Logg.createLogger();
 	
 	public Create(WebDriver driver) {
 		super();
@@ -487,6 +491,10 @@ public class Create extends SuiteBase{
 			
 			waitFor(_errorMessage);
 			boolean value=_errorMessage.isDisplayed();
+			
+			CaptureScreenShot(_driver,"Title Field Error");
+			log.info("screenshot captured successfully");
+			
 			if(value=true){
 				System.out.println("Error message: 'TITLE FIELD CANNOT BE EMPTY' is displayed succesfully");
 			}
@@ -529,6 +537,10 @@ public class Create extends SuiteBase{
 			
 			waitFor(_errorMessage);
 			boolean value=_errorMessage.isDisplayed();
+			
+			CaptureScreenShot(_driver,"Empty Description Error");
+			log.info("screenshot captured successfully");
+			
 			if(value=true){
 				System.out.println("Error message: 'COUPON DESCRIPTION FIELD CANNOT BE EMPTY' is displayed succesfully");
 			}

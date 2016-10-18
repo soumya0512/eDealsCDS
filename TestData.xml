@@ -38,7 +38,7 @@
 <user userid="approver-user">
 <UserName>epromapprover</UserName>
 <password>abc1234</password>
-<promotionNbr>1742553</promotionNbr>
+<promotionNbr>1743554</promotionNbr>
 </user>
 
 <user userid="db2-user">
@@ -48,9 +48,9 @@
 </user>
 
 <user userid="creator-user_Invalid1">
-<UserName>hotae0_vendor15</UserName>
-<password>123test</password>
-<promotionNbr>1742749</promotionNbr>
+<UserName>epromapprover</UserName>
+<password>abc1234</password>
+<promotionNbr>1743555</promotionNbr>
 <PLUCode>test</PLUCode>
 <ExpectedError>PLU code should be between 0 and 9999.</ExpectedError>
 </user>
@@ -58,7 +58,7 @@
 <user userid="approver-user_Invalid2">
 <UserName>epromapprover</UserName>
 <password>abc1234</password>
-<promotionNbr>1742927</promotionNbr>
+<promotionNbr>1743556</promotionNbr>
 <dealAmount>12541</dealAmount>
 <ExpectedError>Amount should be between 0 and 999.99.</ExpectedError>
 </user>
